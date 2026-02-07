@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Nisshreet Bhattarai — Computer Science Portfolio</title>
+  <meta name="description" content="Computer Science portfolio of Nisshreet Bhattarai: projects, experience, skills, and contact."/>
+  <meta name="author" content="Nisshreet Bhattarai"/>
+
+  <!-- Social preview -->
+  <meta property="og:title" content="Nisshreet Bhattarai — Computer Science Portfolio"/>
+  <meta property="og:description" content="Projects, experience, and skills in software development, systems, and cybersecurity."/>
+  <meta property="og:type" content="website"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <!-- Decorative background -->
+  <div class="bg">
+    <div class="grain"></div>
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="grid-overlay"></div>
+    <div class="progressBar" id="progressBar"></div>
+    <div class="cursorGlow" id="cursorGlow"></div>
+
+  </div>
+
+  <header class="topbar" id="top">
+    <nav class="nav">
+      <a class="brand" href="#home">
+        <span class="brandDot"></span>
+        <span>Nisshreet</span>
+      </a>
+
+      <button class="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="links" id="navLinks">
+        <li><a class="navlink" href="#about">About</a></li>
+        <li><a class="navlink" href="#experience">Experience</a></li>
+        <li><a class="navlink" href="#projects">Projects</a></li>
+        <li><a class="navlink" href="#skills">Skills</a></li>
+        <li><a class="navlink cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="section hero">
+      <div class="container heroGrid">
+        <div class="heroLeft reveal">
+          <div class="pill">
+            <span class="spark"></span>
+            <span>Computer Science • Software Engineering • Systems • Security</span>
+          </div>
+
+          <h1 class="headline">
+            I build <span class="gradText">clean, reliable</span> software
+            and love solving tough technical problems.
+          </h1>
+
+          <p class="subhead">
+            I’m <b>Nisshreet Bhattarai</b> — a Computer Science student focused on building projects that are practical,
+            well-structured, and easy to use. I enjoy systems, security, and shipping polished work.
+          </p>
+
+          <div class="heroBtns">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Contact</a>
+          </div>
+
+          <div class="heroMeta">
+            <div class="metaCard">
+              <p class="metaBig">Student</p>
+              <p class="metaSmall">CS Portfolio</p>
+            </div>
+            <div class="metaCard">
+              <p class="metaBig">Build</p>
+              <p class="metaSmall">Code • Debug • Improve</p>
+            </div>
+            <div class="metaCard">
+              <p class="metaBig">Grow</p>
+              <p class="metaSmall">Always learning</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="heroRight reveal">
+          <div class="glassPanel">
+            <div class="panelTop">
+              <div class="statusDot"></div>
+              <p>Currently working on</p>
+            </div>
+
+            <div class="panelMain">
+              <h3>Event Management System (Course Project)</h3>
+              <p class="muted">
+                A project focused on real workflows: creating accounts, submitting events, searching events,
+                registrations, and payment flow concepts.
+              </p>
+
+              <div class="chips">
+                <span>Java</span>
+                <span>Web</span>
+                <span>APIs</span>
+                <span>Git</span>
+              </div>
+
+              <div class="panelStats">
+                <div class="stat">
+                  <p class="k">Focus</p>
+                  <p class="v">Readable code</p>
+                </div>
+                <div class="stat">
+                  <p class="k">Goal</p>
+                  <p class="v">Solid features</p>
+                </div>
+                <div class="stat">
+                  <p class="k">Style</p>
+                  <p class="v">Clean UI</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panelBottom">
+              <a class="miniLink" href="#projects">See projects →</a>
+              <div class="miniBadges">
+                <span class="badge">Open to internships</span>
+                <span class="badge outline">Remote / On-site</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="floatingCard fc1">
+            <p class="smallLabel">Interest</p>
+            <p class="bigLabel">Cybersecurity</p>
+            <p class="tiny muted">breach analysis • prevention</p>
+          </div>
+
+          <div class="floatingCard fc2">
+            <p class="smallLabel">Coursework</p>
+            <p class="bigLabel">Operating Systems</p>
+            <p class="tiny muted">threads • sync • correctness</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="scrollHint">
+        <span></span>
+        <p>Scroll</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>About</h2>
+          <p class="muted">A quick overview of me as a Computer Science student.</p>
+        </div>
+
+        <div class="aboutGrid">
+          <article class="card reveal">
+            <h3>What I’m focused on</h3>
+            <p class="muted">
+              I’m building a strong foundation in programming, systems, and software engineering.
+              I like projects that involve problem-solving, structure, and clean implementation.
+            </p>
+            <div class="divider"></div>
+            <ul class="bullets">
+              <li><b>What I enjoy:</b> software projects, systems concepts, security topics</li>
+              <li><b>How I work:</b> plan → build → test → improve</li>
+              <li><b>Tools I use:</b> GitHub, VS Code, Linux terminal</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>Highlights</h3>
+            <div class="highlightGrid">
+              <div class="highlight">
+                <p class="num">01</p>
+                <p class="title">Strong fundamentals</p>
+                <p class="muted">Programming + problem solving with attention to detail.</p>
+              </div>
+              <div class="highlight">
+                <p class="num">02</p>
+                <p class="title">Systems mindset</p>
+                <p class="muted">I like OS concepts, correctness, and thinking through edge cases.</p>
+              </div>
+              <div class="highlight">
+                <p class="num">03</p>
+                <p class="title">Security interest</p>
+                <p class="muted">I’m interested in how breaches happen and how to prevent them.</p>
+              </div>
+              <div class="highlight">
+                <p class="num">04</p>
+                <p class="title">Presentation-ready</p>
+                <p class="muted">I can document and explain my work clearly.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE (REALISTIC) -->
+    <section id="experience" class="section alt">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Experience</h2>
+          <p class="muted">Real experience as a CS student: projects, labs, coursework, and technical work.</p>
+        </div>
+
+        <div class="timeline reveal">
+
+          <div class="tItem">
+            <div class="tDot"></div>
+            <div class="tCard">
+              <div class="tTop">
+                <h3>Software Projects (Course + Personal)</h3>
+                <span class="tTag">Development</span>
+              </div>
+              <p class="muted">
+                Built multiple projects focusing on planning, implementation, debugging, and clean output.
+              </p>
+              <ul class="miniList">
+                <li>Implemented features using modular and readable code</li>
+                <li>Practiced testing, debugging, and improving based on feedback</li>
+                <li>Organized work using Git/GitHub and structured submissions</li>
+              </ul>
+              <p class="tTime">2024 — Present</p>
+            </div>
+          </div>
+
+          <div class="tItem">
+            <div class="tDot"></div>
+            <div class="tCard">
+              <div class="tTop">
+                <h3>Operating Systems & Concurrency Labs</h3>
+                <span class="tTag">Systems</span>
+              </div>
+              <p class="muted">
+                Hands-on experience understanding processes/threads, synchronization, and correctness.
+              </p>
+              <ul class="miniList">
+                <li>Worked with core OS topics (threads, scheduling ideas, synchronization)</li>
+                <li>Learned to identify race conditions and apply safe patterns</li>
+                <li>Strengthened Linux terminal workflow for development and testing</li>
+              </ul>
+              <p class="tTime">2025</p>
+            </div>
+          </div>
+
+          <div class="tItem">
+            <div class="tDot"></div>
+            <div class="tCard">
+              <div class="tTop">
+                <h3>Cybersecurity Coursework & Case Studies</h3>
+                <span class="tTag">Security</span>
+              </div>
+              <p class="muted">
+                Analyzed real incidents and learned practical security concepts through assignments and presentations.
+              </p>
+              <ul class="miniList">
+                <li>Studied common vulnerabilities, social engineering, and security best practices</li>
+                <li>Practiced incident analysis: timeline, impact, and mitigation recommendations</li>
+                <li>Improved documentation and technical communication</li>
+              </ul>
+              <p class="tTime">2024 — 2025</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Projects</h2>
+          <p class="muted">A curated set of CS work. (Add repo links anytime.)</p>
+        </div>
+
+        <div class="projectGrid">
+          <article class="pCard reveal" data-tilt>
+            <div class="pTop">
+              <span class="pBadge">Featured</span>
+              <span class="pType">Software</span>
+            </div>
+            <h3>Event Management System</h3>
+            <p class="muted">
+              Course project modeling real workflows: account creation, event submission, search, registration, and payments.
+            </p>
+            <div class="pTags">
+              <span>Java</span><span>OOP</span><span>Design</span><span>Testing</span>
+            </div>
+            <div class="pLinks">
+              <a class="plink" href="https://github.com/" target="_blank">GitHub</a>
+              <a class="plink" href="#contact">Contact for demo</a>
+            </div>
+          </article>
+
+          <article class="pCard reveal" data-tilt>
+            <div class="pTop">
+              <span class="pBadge outline">Build</span>
+              <span class="pType">Systems</span>
+            </div>
+            <h3>OS / Concurrency Lab Work</h3>
+            <p class="muted">
+              Explored threading and synchronization concepts with lab-style coding and correctness reasoning.
+            </p>
+            <div class="pTags">
+              <span>C</span><span>Linux</span><span>Threads</span><span>Debugging</span>
+            </div>
+            <div class="pLinks">
+              <a class="plink" href="https://github.com/" target="_blank">GitHub</a>
+              <a class="plink" href="#contact">Ask for details</a>
+            </div>
+          </article>
+
+          <article class="pCard reveal" data-tilt>
+            <div class="pTop">
+              <span class="pBadge outline">Analysis</span>
+              <span class="pType">Security</span>
+            </div>
+            <h3>Cybersecurity Breach Case Study</h3>
+            <p class="muted">
+              Security presentation/report: breach timeline, impact assessment, and practical prevention recommendations.
+            </p>
+            <div class="pTags">
+              <span>Security</span><span>IR</span><span>Mitigation</span><span>Writing</span>
+            </div>
+            <div class="pLinks">
+              <a class="plink" href="https://github.com/" target="_blank">GitHub</a>
+              <a class="plink" href="#contact">Request report</a>
+            </div>
+          </article>
+
+          <article class="pCard reveal" data-tilt>
+            <div class="pTop">
+              <span class="pBadge outline">AI</span>
+              <span class="pType">Algorithms</span>
+            </div>
+            <h3>Search Algorithms Practice</h3>
+            <p class="muted">
+              Implemented and analyzed search strategies (UCS/A*, heuristics) with time/space reasoning and correctness checks.
+            </p>
+            <div class="pTags">
+              <span>Python</span><span>Algorithms</span><span>Heuristics</span><span>Analysis</span>
+            </div>
+            <div class="pLinks">
+              <a class="plink" href="https://github.com/" target="_blank">GitHub</a>
+              <a class="plink" href="#contact">Ask for code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS (REALISTIC, FULL LANGUAGES) -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Skills</h2>
+          <p class="muted">Languages, tools, and technical areas I work with.</p>
+        </div>
+
+        <div class="skillsGrid">
+          <article class="card reveal">
+            <h3>Core Skills</h3>
+            <div class="meters">
+              <div class="meter" data-level="85">
+                <div class="mTop"><span>Problem Solving</span><span class="pct">85%</span></div>
+                <div class="bar"><div class="fill"></div></div>
+              </div>
+              <div class="meter" data-level="80">
+                <div class="mTop"><span>Data Structures & Algorithms</span><span class="pct">80%</span></div>
+                <div class="bar"><div class="fill"></div></div>
+              </div>
+              <div class="meter" data-level="78">
+                <div class="mTop"><span>Debugging & Testing</span><span class="pct">78%</span></div>
+                <div class="bar"><div class="fill"></div></div>
+              </div>
+              <div class="meter" data-level="72">
+                <div class="mTop"><span>Security Fundamentals</span><span class="pct">72%</span></div>
+                <div class="bar"><div class="fill"></div></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <h3>Languages & Tools</h3>
+            <div class="stack">
+              <span class="chip">Java</span>
+              <span class="chip">C</span>
+              <span class="chip">Python</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">Linux</span>
+              <span class="chip">VS Code</span>
+            </div>
+            <p class="muted tiny">
+              Add/remove anything you want (React, Node, Docker, etc.).
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Technical Areas</h3>
+            <ul class="bullets">
+              <li>Object-Oriented Programming (OOP)</li>
+              <li>Web fundamentals (front-end + basic backend concepts)</li>
+              <li>Operating systems concepts (processes, threads, synchronization)</li>
+              <li>Cybersecurity fundamentals (common threats + prevention)</li>
+              <li>Technical writing and documentation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Contact</h2>
+          <p class="muted">Let’s connect — email, phone, LinkedIn, and GitHub.</p>
+        </div>
+
+        <div class="contactGrid">
+          <article class="card reveal">
+            <h3>Reach me</h3>
+            <p class="muted">Fastest: email or LinkedIn.</p>
+
+            <div class="contactRow">
+              <div>
+                <p class="k">Email</p>
+                <p class="v" id="emailText">bnisshreet@gmail.com</p>
+              </div>
+              <button class="btn small" id="copyEmail">Copy</button>
+            </div>
+
+            <div class="contactRow">
+              <div>
+                <p class="k">Phone</p>
+                <p class="v"><a class="alink" href="tel:+18177187493">+1 (817) 718-7493</a></p>
+              </div>
+              <a class="btn small ghost" href="tel:+18177187493">Call</a>
+            </div>
+
+            <div class="contactRow">
+              <div>
+                <p class="k">LinkedIn</p>
+                <p class="v">
+                  <a class="alink" href="https://www.linkedin.com/in/nisshreet-bhattarai-07b85b255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                    linkedin.com/in/nisshreet-bhattarai
+                  </a>
+                </p>
+              </div>
+              <a class="btn small ghost" href="mailto:bnisshreet@gmail.com">Email</a>
+            </div>
+
+            <div class="contactRow">
+              <div>
+                <p class="k">GitHub</p>
+                <p class="v">
+                  <a class="alink" href="https://github.com/" target="_blank">github.com</a>
+                </p>
+              </div>
+              <a class="btn small ghost" href="https://github.com/" target="_blank">Open</a>
+            </div>
+
+            <div class="divider"></div>
+            <p class="muted tiny">
+              Tip: If you want your GitHub to go to your profile directly, replace the link with:
+              <b>https://github.com/Nisshreet</b>
+            </p>
+          </article>
+
+          <form class="card reveal form"
+                action="mailto:bnisshreet@gmail.com"
+                method="post"
+                enctype="text/plain">
+            <h3>Send a message</h3>
+
+            <label>
+              Name
+              <input name="name" placeholder="Your name" required>
+            </label>
+
+            <label>
+              Email
+              <input name="email" type="email" placeholder="you@example.com" required>
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="6" placeholder="Tell me what you’re building..." required></textarea>
+            </label>
+
+            <button class="btn primary" type="submit">Send</button>
+            <p class="muted tiny">
+              This opens your email app (no backend). If you want a real online form (Formspree/Netlify), tell me.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+<!-- WOW: Project Modal -->
+<div class="modal" id="projectModal" aria-hidden="true">
+  <div class="modalBackdrop" id="modalBackdrop"></div>
+  <div class="modalCard" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="modalTop">
+      <h3 id="modalTitle">Project</h3>
+      <button class="modalClose" id="modalClose" aria-label="Close">✕</button>
+    </div>
+    <p class="muted" id="modalDesc"></p>
+    <div class="modalTags" id="modalTags"></div>
+    <div class="modalBtns">
+      <a class="btn primary" id="modalGithub" target="_blank">GitHub</a>
+      <a class="btn ghost" id="modalLink" target="_blank">Link</a>
+    </div>
+  </div>
+</div>
+
+    <footer class="footer">
+      <div class="container foot">
+        <p class="muted">© <span id="year"></span> Nisshreet Bhattarai — Computer Science Portfolio</p>
+        <a class="toTop" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+
+</body>
+</html>
